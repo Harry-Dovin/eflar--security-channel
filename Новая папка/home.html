@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать на Эфлару!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('castle_background.jpg'); /* Замените на URL вашего фона замка */
+            background-size: cover;
+            background-position: center;
+            color: #f0e6d2; /* Светлый цвет текста для темного фона */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон для текста */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #d4af37; /* Золотистый цвет для заголовка */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .important-text {
+            color: #ff4d4d; /* Красный цвет для выделения */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .list-item {
+            margin-left: 20px;
+            text-align: left;
+            list-style-type: disc;
+        }
+
+        .separator {
+            border-top: 2px dashed #888;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .art-button {
+            background-color: #d4af37;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .art-button:hover {
+            background-color: #b8972e;
+        }
+
+        .art-container {
+            margin-top: 30px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .art-container.show {
+            max-height: 500px; /* Примерная максимальная высота изображения */
+        }
+
+        .art-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .telegram-link {
+            color: #00aced; /* Цвет ссылки Telegram */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .telegram-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на Эфлару!</h1>
+        <p class="important-text">СТОЯТЬ, НЕ ДВИГАТЬСЯ! Вы задержаны на Эфларе! Сейчас же послушайте, за что арестованы.</p>
+        <div class="separator"></div>
+        <p>✤ Итак, вы попали в этот мир. Зачем? Ну и что, что здесь</p>
+        <ul>
+            <li class="list-item">✻ самые красивые замки</li>
+            <li class="list-item">✻ самые звёздные леса</li>
+            <li class="list-item">✻ самые недружелюбные русалки</li>
+            <li class="list-item">✻ самые красивые парни</li>
+        </ul>
+        <div class="separator"></div>
+        <p>✤ Наталья Щерба, королева этого мира, даёт нам возможность сойти с ума от Астроградских пряников, покататься на бескрылых летающих поняшках и даже прогуляться по самым страшным подземельям Змиулана.</p>
+        <div class="separator"></div>
+        <p>✤ Скажу по секрету, многие Остальцы проведали о нем. Они:</p>
+        <ul>
+            <li class="list-item">✻ Пишут фанфики о Короле Времени и каком‐то обоятельном кудряше.</li>
+            <li class="list-item">✻ Делают миллионы красочных и совсем грустных эдитов</li>
+            <li class="list-item">✻ Составляют кроссворды, ребусы, квесты, викторины</li>
+            <li class="list-item">✻ Пишут стихи и сочиняют песни</li>
+        </ul>
+        <div class="separator"></div>
+        <p>✤ Это секта, понимаешь!? Ты входишь в неё, я уверен! Ты пришёл обнять Короля? Или нарисовать его портрет?</p>
+        <div class="separator"></div>
+        <p>✤ Делаем вывод: ты на Эфларском охранном пункте. Зачем ты здесь? Не известно. У тебя есть два пути:</p>
+        <ul>
+            <li class="list-item">✻ 1. Отправиться в подземелье Змиулана под пытками</li>
+            <li class="list-item">✻ 2. Остаться с нами, поиграть, рассмотреть арты, почитать фанфики, посмотреть короткометражные мультфильмы и насладиться самыми красивыми эдитами. Наши вернве слуги помогут со всем разобраться</li>
+        </ul>
+        <div class="separator"></div>
+        <p>✤ Директор заведения (<a href="https://t.me/Soft_sof27" class="telegram-link" target="_blank">@Soft_sof27</a>) будет рад видеть нового проходимца.</p>
+        <div class="separator"></div>
+        <p>✤ Выбор за тобой, малыш. И у тебя есть 3... 2... 1... всё.</p>
+
+        <div class="button-container">
+            <button class="art-button" onclick="toggleArt()">Арт нашего владельца</button>
+        </div>
+
+        <div class="art-container" id="artContainer">
+            <img src="c:\Users\User\OneDrive\Изображения\РИссс.jpg" alt="Арт владельца" class="art-image">
+        </div>
+    </div>
+
+    <script>
+        function toggleArt() {
+            const artContainer = document.getElementById('artContainer');
+            artContainer.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
